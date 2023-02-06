@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.box { height: 30px; 
+     width: 30px;
+     background-color: #DEFFFB; 
+     border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px;
+}
+
+
+.footer{
+background-color: black;
+color: white;
+position: absolute;
+bottom: 0;
+width: 100%;
+}
+
+.line{
+    border-bottom: 3px solid #474554;
+    display: flex;
+    justify-content: center;
+    width: 10.5%;
+    margin: 0px 0pc 0px 6%;
+}
