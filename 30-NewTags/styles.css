@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    height: 100vh;
+html {
+    height: 100%;
 }
 
 .box { height: 30px; 
      width: 30px;
-     background-color: #DEFFFB; 
+     background-color: #3ebdae; 
      border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px;
 }
 
@@ -29,4 +31,35 @@ width: 100%;
     justify-content: center;
     width: 10.5%;
     margin: 0px 0pc 0px 6%;
+}
+
+.footer-copy{
+    background-color: black;
+padding: 20px 0px;
+width: 100%;
+}
+
+.footer-copy p{
+
+    color: white;
+    text-align: center;
+}
+
+.pepega_footer{
+
+width: 100%;
+display: flex;
+align-items: flex-end;
+}
+
+.font-styles{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 130px;
+    background-color: lightgray;
+    align-items: center;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+     
 }
