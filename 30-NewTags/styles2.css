@@ -9,11 +9,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    background-color: #0c0b0b;
+}
 
-
+/* footer==================== */
 
 .footer{
-    background-color: black;
     color: white;
     position: absolute;
     bottom: 0;
@@ -21,7 +23,7 @@
     }
 
 .footer-copy{
-    background-color: black;
+ background-color: rgb(0, 0, 0);
 padding: 20px 0px;
 width: 100%;
 }
@@ -31,7 +33,6 @@ width: 100%;
     color: white;
     text-align: center;
 }
-
 .pepega_footer{
 
 width: 100%;
@@ -39,13 +40,14 @@ display: flex;
 align-items: flex-end;
 }
 
+/* Squares section====================== */
 .font-styles{
     display: flex;
     justify-content: space-around;
     gap: 30px;
     height: 130px;
     align-items: center;
-    color: rgb(17, 10, 10);
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
      
 }
@@ -58,7 +60,8 @@ align-items: flex-end;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +121,7 @@ background-color: rgba(255, 255, 255, 0.3);
 /* navIGATION============================ */
 
 .main-section{
-    background-image: url(/Assets/pexels-mitchell-luo-3685207.jpg);
+    background-image: url(/Assets/pexels-victor-freitas-973505.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -136,7 +139,7 @@ article h1 {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #232121;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -145,7 +148,7 @@ article p {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #232121;
+    color: #ffffff;
     font-size: 15px;
 }
 
@@ -153,7 +156,7 @@ article blockquote {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    color: #000000;
+    color: #ffffff;
     font-size: 15px;
 }
 
@@ -168,14 +171,15 @@ article blockquote {
     display: flex;
     justify-content: space-evenly;
     height: 70vh;
-    background-color: #f8f7ff;
+    background-color: #161616;
 }
 
 .code{
 
     height: 100%;
-    background-color: #f3efef;
+    background-color: #0f0f0f;
     width: 100%;
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -183,8 +187,9 @@ article blockquote {
 }
 
 .quote-cite{
+    color: white;
+    background-color: #0a0a0a;
     height: 100%;
-    background-color: #e0e0e0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -200,7 +205,8 @@ article blockquote {
     align-items: center;
     flex-direction: column;
     font-size: 3vh;
-    background-color: #f3efef;
+    color: white;
+    background-color: #0a0a0a;
 }
 .progress{
     height: 100%;
@@ -209,7 +215,8 @@ article blockquote {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background-color: #e0e0e0;
+    color: white;
+    background-color: #0f0f0f;
 }
 
 .form input {
@@ -244,11 +251,9 @@ section {
     display: flex;
     justify-content: space-evenly;
     height: 50vh;
-    background-color: #fafafa;
+    background-color: #1f1f1f;
     align-items: center;
-    
     padding-bottom: 30px;
-
 }
 
 section div form select{   
@@ -259,6 +264,10 @@ section div form select{
         border-radius: 5px;
         appearance: none;
         background-color: white;    
+}
+
+.sec-text{
+    color: white;
 }
 
 section p{
@@ -284,7 +293,7 @@ textarea {
   textarea:focus {
     outline: none;
     border: 1px solid gray;
-    box-shadow: 0 0 10px lightgray;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.1);
   }
 
 
@@ -300,6 +309,7 @@ textarea {
 details.styled{
     padding: 1em;
     border: 1px solid #232121;
+    background-color: #e4e4e4;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
