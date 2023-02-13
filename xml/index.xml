@@ -2,8 +2,7 @@
     <core>
         <name>CPU</name>
         <description>
-        
-        <function>It's the brain of the computer, it performs both arithmetic & and logic operations</function>
+            <function>It's the brain of the computer, it performs both arithmetic & and logic operations</function>
             <brands>
                 <name>Intel</name>
                 <name>AMD</name>
@@ -44,7 +43,7 @@
 
         <name>PSU</name>
         <description>
-            <function>>It turns alternating current into direct current, it's set for protecting the other components from voltage peaks that may cause potential damage</function>
+            <function>It turns alternating current into direct current, it's set for protecting the other components from voltage peaks that may cause potential damage</function>
                 <branchs>
                     <name>Certified</name>
                     <name>Non-certied</name>

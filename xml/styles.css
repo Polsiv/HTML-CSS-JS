@@ -1,0 +1,38 @@
+th:nth-child(2n){
+    background-color: rgb(89, 164, 65);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+th:nth-child(2n+1){
+    background-color: rgb(57, 57, 246);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+td{
+    border: 1px solid rgb(57, 57, 246);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color:  white;
+    padding: 3px 0 3px 2px;
+}
+
+body{
+    margin: 0;
+    background: url(https://i.pinimg.com/originals/0b/e9/8f/0be98fab67529e61370ae2bb0145c49e.jpg);
+}
