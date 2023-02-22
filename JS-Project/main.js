@@ -158,5 +158,48 @@ interval(interval1.value, interval2.value);
 
 })
 
-
 //Eighth function==================================================
+
+let primeNumber = document.getElementById('primeInput')
+
+function PrimeCalc(prime){
+
+let counter = 0;
+prime = parseInt(prime);
+  
+for(let i = 0; i <= prime; i++){
+
+      if(prime % i == 0){
+        counter ++;
+      }
+  }
+  if (counter > 2){
+
+    console.log("It's not prime") 
+  } else {
+    console.log("It's prime!")
+  }
+
+}
+
+document.querySelector("#primeOutput").addEventListener('click', (event) =>{
+  event.preventDefault();
+  PrimeCalc(primeInput.value);
+})
+
+//Ninth function==================================================
+
+let temperature = document.getElementById('temps')
+
+function findTemp (temp){
+
+temperature = parseFloat(temperature);
+let newtem = (5/9) * (temp-32);
+document.getElementById('temoutput').innerHTML= newtem;
+}
+
+document.querySelector("#tempoutput").addEventListener('click', (event) =>{
+
+  findTemp(temps.value);
+  event.preventDefault();
+});
