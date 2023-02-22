@@ -82,7 +82,7 @@ document.querySelector('#output').addEventListener('click', function() {
     RootCalculator(c1.value, c2.value, c3.value);
 });
 
-//Fourth Function==================================================
+//Fourth ==================================================
 
 
 const[i1, i2, i3, i4] = ["name", "age", "career", "code"].map((i) => document.querySelector(`#BF${i}`))
@@ -101,7 +101,7 @@ document.querySelector('#BFoutput').addEventListener('click', function(){
   StudentForm(BFname.value, BFage.value, BFcareer.value, BFcode.value)
 })
 
-//Fifth Function==================================================
+//Fifth ==================================================
 
 const base = document.getElementById('base')
 const height = document.getElementById('height')
@@ -119,7 +119,7 @@ event.preventDefault();
   TriangleArea(base.value, height.value);
 });
 
-//Sixth Function==================================================
+//Sixth ==================================================
 
 
 function ColorSwitcher (){
@@ -133,7 +133,7 @@ document.querySelector("#colorchange").addEventListener('click', () => {
 })
 
 
-//Seventh function==================================================
+//Seventh ==================================================
 
 let interval1 = document.getElementById('interval1')
 let interval2 = document.getElementById('interval2')
@@ -158,7 +158,7 @@ interval(interval1.value, interval2.value);
 
 })
 
-//Eighth function==================================================
+//Eighth ==================================================
 
 let primeNumber = document.getElementById('primeInput')
 
@@ -187,7 +187,7 @@ document.querySelector("#primeOutput").addEventListener('click', (event) =>{
   PrimeCalc(primeInput.value);
 })
 
-//Ninth function==================================================
+//Ninth ==================================================
 
 let temperature = document.getElementById('temps')
 
@@ -203,3 +203,34 @@ document.querySelector("#tempoutput").addEventListener('click', (event) =>{
   findTemp(temps.value);
   event.preventDefault();
 });
+
+//Tenth==================================================
+
+
+function SortingNumbers (arrSixParam){
+
+//console.log(document.querySelector('data-ipt="dataIpt"'))
+
+const SortArray = arrSixParam.map((i) => Number(i));
+//console.log(SortArray);
+
+let highest = SortArray[0];
+for(let i = 1; i < SortArray.length; i++){
+
+  if( SortArray[i] > highest ){
+
+highest = SortArray[i];
+
+    }
+  }
+console.log(highest)
+}
+
+document.querySelector('#sixoutput').addEventListener('click', (event) => {
+
+const SortNumbers = document.querySelector("#sixnumbers").value;
+let arrSix= SortNumbers.split(", ");
+SortingNumbers(arrSix);  
+ event.preventDefault();
+});
+
