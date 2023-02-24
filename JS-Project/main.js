@@ -13,7 +13,7 @@ finalResult = finalResult * 10 + digit;
 
 num = Math.floor(num / 10);
     }
-   document.getElementById('result').innerHTML = finalResult;
+   document.getElementById('result').innerHTML = ("Inverted Number: " + finalResult)
    
 }
 
@@ -36,7 +36,7 @@ document.getElementById('result').addEventListener('click', function(event){
 
 function PrintUserName(){
 
-console.log("omg this is ur rela name?" + document.getElementById('name').value );
+document.getElementById('nameout').innerHTML = ("OMG NICE TO MEET YOU! " + document.getElementById('name').value );
 
 }
 
@@ -125,10 +125,13 @@ event.preventDefault();
 function ColorSwitcher (){
 
 document.querySelector(".box").style.backgroundColor = "#DEFFFB"
+TransitionEvent
 }
 
 document.querySelector("#colorchange").addEventListener('click', () => {
-   ColorSwitcher();
+
+  document.getElementById('fav-color').innerHTML = ("Fav color!");  
+  ColorSwitcher();
 
 })
 
@@ -173,18 +176,27 @@ for(let i = 0; i <= prime; i++){
         counter ++;
       }
   }
-  if (counter > 2){
 
-    console.log("It's not prime") 
-  } else {
-    console.log("It's prime!")
+  if(primeNumber = ""){
+    document.getElementById('primeornot').innerHTML = ("a!")
   }
+
+  if (counter > 2){
+    document.getElementById('primeornot').innerHTML = ("Not a prime number!")
+  } else {
+    document.getElementById('primeornot').innerHTML = ("It's prime!")
+  } 
 
 }
 
 document.querySelector("#primeOutput").addEventListener('click', (event) =>{
   event.preventDefault();
-  PrimeCalc(primeInput.value);
+
+  if(!primeInput.value){
+    alert("Imagine trolling with empty values!")
+  } else{
+    PrimeCalc(primeInput.value);
+  }
 })
 
 //Ninth ==================================================
@@ -200,9 +212,15 @@ document.getElementById('temoutput').innerHTML= newtem;
 
 document.querySelector("#tempoutput").addEventListener('click', (event) =>{
 
-  findTemp(temps.value);
+ 
   event.preventDefault();
-});
+
+  if(!temps.value){
+    alert("Imagine trolling with empty values!")
+  } else{
+    findTemp(temps.value);
+    }
+  });
 
 //Tenth==================================================
 
@@ -223,13 +241,15 @@ highest = SortArray[i];
 
     }
   }
-console.log(highest)
+document.getElementById('highOutput').innerHTML = ("The largest number is: " + highest)
 }
 
 document.querySelector('#sixoutput').addEventListener('click', (event) => {
 
 const SortNumbers = document.querySelector("#sixnumbers").value;
 let arrSix= SortNumbers.split(", ");
+
+
 SortingNumbers(arrSix);  
  event.preventDefault();
 });

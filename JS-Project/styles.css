@@ -1,3 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato:wght@300&family=Montserrat:ital,wght@0,100;0,200;0,400;1,100&family=Open+Sans:wght@300&family=Roboto+Mono:wght@700&family=Roboto:wght@100;400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+}
+
+html {
+    background-color: #171717;
+}
+
+h1{
+font-family: 'Nixie One', cursive;
+letter-spacing: 5px;
+text-align: center;
+font-size: 50px;
+color: white;
+}
+
+/* button from: https://uiverse.io/barisdogansutcu/fuzzy-bullfrog-72 */
+button {
+    padding: 9px 20px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: all .5s ease;
+   }
+   
+   button:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    
+   }
+   
+   button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+/*===============*/
+
 .box {
     height: 200px;
     width: 200px;
@@ -7,4 +57,140 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }   
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 5px 0 10px;
+    font-size: 15px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+input {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 3px;
+    outline: 0px;
+    padding: 7px;
+}
+
+/*====================================== */
+
+.first-section, .second-section, .third-section, .fifth-section, .sixth-section, .seventh-section, .eighth-section, .ninth-section, .tenth-section {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+
+/*====================================== */
+
+.first-section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Assets/pexels-goashape-6431863.jpg);
+}
+
+/*====================================== */
+
+.third-section{
+    /* https://www.pexels.com/photo/green-leaves-1072179/ */
+    background-image: url(Assets/pexels-cátia-matos-1072179.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 20px;
+    height: 70vh;
+}
+
+/*====================================== */
+
+.fourth-section{
+height: 50vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+color: white;
+}
+
+.fourth-section h1{
+padding: 30px 0 30px 0;
+}
+
+.input-sec{
+padding-bottom: 30px;
+display: flex;
+justify-content: space-around
+}
+
+.form-output{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto 30px;
+    
+}
+
+/*====================================== */
+
+.fifth-section{
+    /* https://www.pexels.com/photo/light-bokeh-photography-792972/ */
+    background-image: url(Assets/pexels-thijs-van-der-weide-792972.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fifth-section p{
+    text-align: center;
+}
+
+/*====================================== */
+
+.sixth-section{
+height: 70vh;
+}
+
+/*====================================== */
+
+.seventh-section{
+    /* https://www.pexels.com/photo/underwater-photography-of-deep-sea-932638/ */
+background-image: url(Assets/andrew-ling-YDsQJ45KMo0-unsplash.jpg);
+background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* =============================== */
+
+.ninth-section{
+    /* https://www.pexels.com/photo/scenic-view-of-rocky-mountain-during-evening-1624438/ */
+    background-image: url(Assets/pexels-eberhard-grossgasteiger-1624438.jpg);
+background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* =============================== */
+
+.tenth-section{
+    height: 50vh;
+}

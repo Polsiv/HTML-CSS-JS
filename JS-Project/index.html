@@ -13,17 +13,17 @@
 <!--First section==========================-->
 
 <div class="first-section">
-  <h1>Num switcher</h1> 
-    <form action="">
+ 
+   <h1>Num switcher</h1> 
+      <form action="">
+        <label for="">Enter the number</label>
+        <input type="text" id="numSwitcher">
+        </form>
 
-      <label for="">Enter the number</label>
-
-      <input type="text" id="numSwitcher">
-
-      <button id="btnEnter">Enter</button>
-      </form>
-
-      <p id="result">Yup</p>
+<button id="btnEnter">Enter</button>
+      <div>
+        <p id="result">Number</p>
+      </div>
 </div>
       
 <!--Second section==========================-->
@@ -34,11 +34,12 @@
   <label for="">Enter your name!</label>
   <input type="text" id="name">
   <button id="btnEnter2">Submit</button>
+  <p id="nameout"></p>
 </div>
 
 <!--Third section==========================-->
 
-<div class="section-">
+<div class="third-section">
   <h1>Cuadratic Fucntion Roots Calculator</h1>
 
   <label for="">Enter the first coefficient</label>
@@ -59,21 +60,25 @@
   
   <h1>Basic input form</h1>
   
-  <label for="">Enter your name:</label>
-  <input type="text" id="BFname">
-  
-  <label for="">Enter your age</label>
-  <input type="text" id="BFage">
-  
-  <label for="">Enter your career</label>
-  <input type="text" id="BFcareer">
-  
-  <label for="">Enter your code</label>
-  <input type="text" id="BFcode">
+  <div class="input-sec">
+    <label for="">Enter your name:</label>
+    <input type="text" id="BFname">
+    
+    <label for="">Enter your age:</label>
+    <input type="text" id="BFage">
+    
+    <label for="">Enter your career:</label>
+    <input type="text" id="BFcareer">
+    
+    <label for="">Enter your code:</label>
+    <input type="text" id="BFcode">
+  </div>
 
-  <button id="BFoutput">Submit</button>
+ <div class="input-sec" ">
+   <button id="BFoutput">Submit</button>
+ </div>
 
-  <div>
+  <div class="form-output">
     <p id="replacement">name</p>
     <p id="replacement2">age</p>
     <p id="replacement3">career</p>
@@ -93,10 +98,12 @@
   
     <label for="">Enter the height</label>
     <input type="number"  id="height">
-  
-    <button id="Toutput">Submit</button>
   </form>
-  <p id="area"></p>
+  <button id="Toutput">Submit</button>
+  <div>
+    <p>Here's the area: </p>
+    <p id="area"></p>
+  </div>
 </div>
 
 <!--Six section========================-->
@@ -105,12 +112,13 @@
   <h1>Color switcher</h1>
    <div class="box"></div>
   <button id="colorchange">Switchcolor</button>
+  <p id="fav-color"></p>
  </div>
 
  <!--Seventh  section========================-->
 
 
-<div>
+<div class="seventh-section">
   <h1>Interval</h1>
   <form action="">
     <label for="">Enter the first number</label>
@@ -118,22 +126,22 @@
 
     <label for="">Enter the second number</label>
     <input type="text" id="interval2">
-
-    <button id="interval-output">Submit</button>
   </form>
+  <button id="interval-output">Submit</button>
 </div>
 
 
  <!--Eighth  section========================-->
 
 <div class="eighth-section">
-  <h1>basic prime number calculator</h1>
+  <h1>Basic prime number calculator</h1>
   <form action="">
   
     <label for="">Enter the number</label>
     <input type="text" name="" id="primeInput">
-    <button id="primeOutput">submit</button>
   </form>
+  <button id="primeOutput">submit</button>
+  <p id="primeornot"></p>
 </div>
 
  <!--Ninth-section========================-->
@@ -143,22 +151,25 @@
   <h1>Temperature converter</h1>
   <form action="">
   <label for="">Enter the number</label>
-  <input type="text" name="" id="temps">
-  <button id="tempoutput">submit</button>
-  
-  <p id="temoutput"></p>
+  <input type="text" name="" id="temps">  
   </form>
+  <button id="tempoutput">submit</button>
+  <p id="temoutput"></p>
 </div>
 
  <!--Tenth-section========================-->
 
-<h1>Enter 6 numbers</h1>
+<div class="tenth-section">
+  <h1>Largest number</h1>
+  <form action="">
+  <label for="">Enter the numbers</label>
+  <input type="text" id="sixnumbers" data-ipt="dataIpt">
+  </form>
+  <button id="sixoutput">Submit</button>
+  <p id="highOutput"></p>
+</div>
 
-<form action="">
-<label for="">Enter the numbers</label>
-<input type="text" id="sixnumbers" data-ipt="dataIpt">
-<button id="sixoutput">Submit</button>
-</form>
+
 
  <script src="main.js"></script>
   </body>
