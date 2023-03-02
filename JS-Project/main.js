@@ -40,7 +40,7 @@ document.getElementById('nameout').innerHTML = ("OMG NICE TO MEET YOU! " + docum
 
 }
 
-document.getElementById('btnEnter2').addEventListener  ('click', function(event){
+document.getElementById('btnEnter2').addEventListener ('click', function(event){
 
     event.preventDefault();
     PrintUserName();
