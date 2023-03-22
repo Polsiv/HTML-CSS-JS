@@ -1,6 +1,6 @@
 let myArray = [];
 let counter = 0;
-for (let i = 0; i < 100; i++){
+for (let i = 0; i < 50000; i++){
     let x = Math.floor((Math.random() * 10000))
     myArray.push(x);
 }
