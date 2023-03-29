@@ -3,7 +3,7 @@ let array = [];
 
 console.time('Insertion');
 
-for(let i = 0; i < 100; i++){
+for(let i = 0; i < 100000; i++){
     array[i] = Math.floor(Math.random()*10000);
   
     }
