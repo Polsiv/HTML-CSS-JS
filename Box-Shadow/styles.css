@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+box-sizing: border-box;
+background-color: rgb(48, 47, 49);
+}
+img{
+    width: 500px;
+    
+}
+
+.fade_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* box shadow */
+/* 
+.fade_container img{
+    box-shadow: inset 0 0 0 100px #000000aa;
+    transition: box-shadow 400ms;
+}
+
+.fade_container img:hover {
+    box-shadow: inset 0 0 0 100px #00000000;
+} */
+
+.fade_container img{
+    border-radius: 10px;
+}
+
+.fade_container img{
+    filter: brightness(50%);
+    transition:  400ms;
+}
+
+.fade_container img:hover{
+  filter: brightness(100%);
+  transition: 400ms;
+}

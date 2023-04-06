@@ -1,0 +1,30 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: rgb(25, 24, 41);
+   
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.live{
+    
+margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(107, 234, 243);
+    animation: pulse 1500ms infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: rgb(107, 234, 243) 0 0 0 0;
+    }
+    75% {
+        box-shadow: rgba(107, 234, 243, 0) 0 0 0 16px;                             /* x y */
+    }
+}                                         
