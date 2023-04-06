@@ -1,0 +1,41 @@
+.container {
+    width: 500px;
+    height: 500px;
+    background:#fff;
+    padding: 10px;
+    border: 10px solid #292828;
+    margin: 20px;
+    
+    display: flex;
+   
+  /*propiedades para el container
+    
+
+    flex-direction: row; filas columnas, y al reves.
+    flex-wrap: nowrap;  compatibilidad de tamaño diria yo.
+    flex-flow:  row wrap; equivale a los 2 de arriba, atajo*/  
+
+   /*disribucion
+   
+    justify-content: center; distribucion X
+    align-items: center ; distribucion Y 
+
+    align-content: solo se utiliza cuando hay varias filas (wrap)
+
+
+*/
+
+
+
+
+}
+
+.elemento {
+    color: #fff;
+    margin: 5px;
+    width: 50px;
+    background: #E67E22;
+    text-align: center;
+    height: 50px;
+
+}
