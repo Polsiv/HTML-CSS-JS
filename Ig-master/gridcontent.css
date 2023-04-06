@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ------------------ */
+.block{
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin: 20px;
+}
+
+
+.Grid{
+    display: grid;
+    justify-content: start;
+}
+
+/*There's also End; Center; Stretch*/
+
+.Grid2  {
+   display: grid;
+    align-items: stretch;
+}
+
+
+.block2{
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin: 20px;
+}
+
+/*there's also start end center stretch*/
+
+
+.block3{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: green;
+}
+
+.block3{
+    display: grid;
+    justify-content: start;
+}
+
+/* There's also end, center, stretch, space-between space-around, space evenly */
+
+.block4{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: purple;
+}
+
+.block4{
+     display: grid;
+     align-content: start;
+     
+}
+
+/* Theres also end; center; stretch; space-between; space-around; space-around */
+
+
+.Grid5{
+    display: grid;
+    justify-self: center;
+}
+
+.block5{
+    display: grid;
+    justify-self: center;
+}
+
+.block5{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+
+/* tehres also start, end, center, stretch */
+
+
+.block6{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    background-color: black;
+    color: wheat;
+}
+
+.Grid6{
+    display: grid;
+    align-self: stretch;
+}
+
+.block6{
+    display: grid;
+    align-self: stretch;
+}
+
+
+/* theres also start, end, center */
+
+
+h1{
+    background: -webkit-linear-gradient(purple, aqua);
+    background-clip: text ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
