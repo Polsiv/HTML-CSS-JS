@@ -4,7 +4,7 @@ class Memory {
       this.frequency = frequency;
       this.latency = latency;
     }
-  
+  //getters
     getCapacity() {
       return this.capacity;
     }
@@ -16,7 +16,7 @@ class Memory {
     getLatency() {
       return this.latency;
     }
-  
+  //setters
     setCapacity(capacity) {
       this.capacity = capacity;
     }
@@ -37,35 +37,35 @@ class Memory {
 //8==============================================================================D
 
 class Ram extends Memory {
-    constructor(capacity, frequency, latency, module, xmp, colour) {
+    constructor(capacity, frequency, latency, modules, xmps, color) {
       super(capacity, frequency, latency);
-      this.module = module;
-      this.XMP = xmp;
-      this.colour = colour;
+      this.modules = modules;
+      this.XMPs = xmps;
+      this.color = color;
     }
   
-    getColour() {
-      return this.colour;
+    getColor() {
+      return this.color;
     }
   
-    RGB(colour) {
-      this.colour = colour;
+    RGB(color) {
+      this.colour = color;
     }
   
-    getModule() {
-      return this.module;
+    getModules() {
+      return this.modules;
     }
   
-    setModule(module) {
-      this.module = module;
+    setModules(modules) {
+      this.module = modules;
     }
   
-    getXMP() {
-      return this.XMP;
+    getXMPs() {
+      return this.XMPs;
     }
   
-    setXMPProfile(xmp) {
-      this.XMP = xmp;
+    setXMPProfile(xmps) {
+      this.XMPs = xmps;
     }
   
     toString() {
@@ -73,7 +73,7 @@ class Ram extends Memory {
     }
   }
   
-  //8==============================================================================D
+  //8==============================================================================
 
   class Storage extends Memory {
     constructor(Capacity, Frequency, Latency, slots, type, buswidth) {
@@ -137,9 +137,8 @@ class Ram extends Memory {
     getThreads() {
       return this.threads;
     }
-  
+
     // Setters
-  
     setFrequency(frequency) {
       this.frequency = frequency;
     }
@@ -152,7 +151,156 @@ class Ram extends Memory {
       this.threads = threads;
     }
   
+
+    MemoryAccess(){
+      return ("The cpu now has access to the memory!")
+    }
+
+    Overclock(){
+      return ("The cpu has been overclocked!")
+    }
+
+    Write(){
+      return ("The cpu has written to the memory!")
+    }
+
     toString() {
       return `Cpu: [frequency=${this.frequency}, cores=${this.cores}, threads=${this.threads}]`;
     }
   }
+
+  //8==============================================================================D
+  
+  
+  class GPU {
+    constructor(teraflops, vrmPhases, vram){
+      this.teraflops = teraflops;
+      this.vrmPhases = vrmPhases;
+      this.vram = vram;
+    }
+    
+    getTeraflops(){
+      return this.teraflops;
+    }
+    
+    getVrmPhases(){
+      return this.vrmPhases;
+    }
+    
+    getVram(){
+      return this.vram;
+    }
+
+    setTeraflops(teraflops){
+      this.teraflops = teraflops;
+    }
+
+    setVrhPhases(vrmphases){
+      this.vrmPhases = vrmphases;
+    }
+
+    setVram(vram){
+      this.vram = vram;
+    }
+
+    calculatePerformance(){
+      return (this.teraflops * this.vrmPhases * this.vram) / 1000000;
+    }
+
+    overclock(){
+        return this.teraflops * this.vrmPhases * this.vram;
+    }
+
+    checkTemperature(){
+      return "Checking temperature"
+    }
+    
+    toString(){
+      return "GPU: " + this.teraflops + " Teraflops, " + this.vrmPhases + " VRM Phases, " + this.vram + " VRAM";
+    }
+  }
+
+  class PSU{
+    constructor(Power, Temperature, Model){
+      this.power = Power;
+      this.temperature = Temperature;
+      this.model = Model;
+    }
+
+    getPower(){
+      return this.power;
+      }
+    
+    getTemperature(){
+      return this.temperature;
+    }
+
+    getModel(){
+      return this.model;
+    }
+
+    setPower(power){
+      this.power = power;
+    }
+
+    setTemperature(temperature){
+      this.temperature = temperature;
+    }
+
+    setModel(model){
+      this.model = model;
+    }
+
+    isWorking(){
+      return this.power > 0 && this.temperature <= 50;
+    }
+
+    increaseTemperature(increment){
+      this.temperature += increment;
+    }
+
+    detectOverheating(){
+      return this.temperature > 100;
+    }
+  }
+
+//8==============================================================================D
+
+class PC {
+
+constructor(cases, fans, ram, ssd){
+this.Ram = ram;
+this.Cases = cases;
+this.Fans = fans;
+this.Storage = ssd;
+this.cpu = null;
+this.gpu = null;
+  }
+
+  setGpu(gpu){
+    this.gpu = gpu;
+  }
+
+  setCpu(cpu) {
+    this.cpu = cpu; 
+  } 
+
+  overclockCpu() {
+    if (this.cpu) {
+      return this.cpu.Overclock();
+    } else {
+      return "No CPU is installed.";
+    }
+  }
+}
+
+
+const myPC = new PC("nzxt", "LianLi", new Ram(32, 3200, "CL16", 2, 3600, "Black"),
+new Storage(300, "1Tb", 30, "4", "ssd", "256 bits"))
+
+myPC.setCpu(new Cpu("3.2Ghz", 4, 8)); 
+
+myPC.setGpu( new GPU())
+
+console.log(myPC.overclockCpu());
+console.log(myPC)

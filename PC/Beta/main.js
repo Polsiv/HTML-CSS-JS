@@ -92,4 +92,3 @@ Company.employees.push(Silvia)
 
 console.log(Company)
 
-//-------------------Composicion

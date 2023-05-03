@@ -1,13 +1,13 @@
 package PC;
 
-public class Gpu extends Cpu {
+public class Gpu  {
 
 private int vrmPhases;
 
-    public Gpu(int frequency, int cores, int threads, int vrmPhases) {
-        super(frequency, cores, threads);
-        this.vrmPhases = vrmPhases;   
-    }
+        public Gpu(int frequency, int cores, int threads, int vrmPhases) {
+            
+            this.vrmPhases = vrmPhases;   
+        }
 
     public int getVrmPhases() {
         return vrmPhases;
@@ -18,7 +18,4 @@ private int vrmPhases;
             System.out.println("U cant set a negative value");
         }
     }
-    
-
-    
 }
