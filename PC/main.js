@@ -268,17 +268,17 @@ class Ram extends Memory {
 
 class PC {
 
-constructor(cases, fans, ram, ssd){
+constructor(cases, fans, ram, cpu, gpu, psu){
 this.Ram = ram;
 this.Cases = cases;
 this.Fans = fans;
-this.Storage = ssd;
-this.cpu = null;
-this.gpu = null;
+this.cpu = cpu;
+this.gpu = gpu;
+this.psu = psu;
   }
 
-  setGpu(gpu){
-    this.gpu = gpu;
+  setStorage(storage){
+    this.storage = storage;
   }
 
   setCpu(cpu) {
@@ -295,12 +295,10 @@ this.gpu = null;
 }
 
 
-const myPC = new PC("nzxt", "LianLi", new Ram(32, 3200, "CL16", 2, 3600, "Black"),
-new Storage(300, "1Tb", 30, "4", "ssd", "256 bits"))
+const myPC = new PC("nzxt", 3, new Ram(32, 3200, "CL16", 2, 3600, "Black"), new Cpu("3.2Ghz", 4, 8), new GPU(1.3, 6, 10), new PSU ("700W", "50", "Modular"))
 
-myPC.setCpu(new Cpu("3.2Ghz", 4, 8)); 
+myPC.setStorage( new Storage(300, "1Tb", 30, "4", "ssd", "256 bits"))
 
-myPC.setGpu( new GPU())
-
+//any mehtod
 console.log(myPC.overclockCpu());
 console.log(myPC)
