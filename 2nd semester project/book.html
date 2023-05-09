@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookstyles.css">
+    <title>Reservar El renuevo</title>
+</head>
+<body>
+<div class="container">
+        <div class="reservation-form">
+            <h2>Reserva tu alojamiento</h2>
+            <form>
+              <label for="check-in-date">Fecha de llegada:</label>
+              <input type="date" id="check-in-date" name="check-in-date">
+          
+              <label for="check-out-date">Fecha de salida:</label>
+              <input type="date" id="check-out-date" name="check-out-date">
+          
+              <label for="num-guests">Número de huéspedes:</label>
+              <select id="num-guests" name="num-guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+              </select>
+          
+              <label for="room-type">Tipo de habitación:</label>
+              <select id="room-type" name="room-type">
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+              </select>
+          
+              <input type="button"  value="Reservar" id="reservar-btn">
+        </form>
+    </div>
+</div>
+
+
+      <div id="completed">
+        <h1>La informacion de tu reserva es la siguiente: </h1>
+        <h3>Llegada</h3>
+        <span id="llegada"></span>
+        <h3>Salida</h3>
+        <span id="salida"></span>
+        <h3>Cantidad personas</h3>
+        <span id="can-personas"></span>
+        <h3>Tipo de habitacion</h3>
+        <span id="tipo-habitacion"></span>
+      </div>
+
+
+      <script src="main.js"></script>
+</body>
+</html>
