@@ -2,30 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
-/* html{
-    background: linear-gradient(170deg, #30563C, #D4FADE);
-    height: 100%;
-    } */
 *{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.container{
-  display: flex;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
+body{
+  background-image: url(Assets/BACKGROUND.png);
+  background-attachment: fixed;
+  
 }
-
 .reservation-form {
-    width: 50%;
-    margin: 0 auto;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 50%; 
+     margin: 0 auto; 
+     background: rgba( 255, 255, 255, 0.25 ); 
+     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+     backdrop-filter: blur( 4px ); 
+     -webkit-backdrop-filter: blur( 4px ); 
+     border-radius: 10px; 
+     border: 1px solid rgba( 255, 255, 255, 0.18 );
+     padding: 20px;
+
   }
   
   h2 {
@@ -72,13 +68,20 @@
     padding: 10px;
     margin-top: 40px;
     box-shadow: 2px 4px 12px #ccc;
-
+    margin-bottom: 40px;
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+    backdrop-filter: blur( 4px ); 
+    -webkit-backdrop-filter: blur( 4px ); 
+    border-radius: 10px; 
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
 }
 #completed h1{
-    color: black;
+    color: white;
 
 }
 #completed h3{
     font-size: 24px;
-    color: black;
+    color: white;
 }

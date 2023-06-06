@@ -22,6 +22,5 @@ reservarBtn.addEventListener('click', () => {
     
   } else {
     alert('Por favor, completa todos los campos antes de reservar');
-    
   }
 });

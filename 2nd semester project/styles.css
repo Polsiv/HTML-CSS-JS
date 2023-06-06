@@ -260,7 +260,7 @@ nav a {
 }
 
 .cards{
-    height: 120vh;
+    height: 130vh;
     background-color: #1a2627;
     display: flex;
     justify-content:space-evenly;
@@ -301,10 +301,19 @@ nav a {
 }
 
 .class-items, .tags-desc{
-    font-size: 3em; 
+    font-size: 2.6em; 
     font-family: 'Raleway', sans-serif; 
 }
 
 .tags-desc{
     text-align: center;
+}
+
+#gallery{
+    background-image: url(/Assets/FD.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    height: 190vh;
 }
