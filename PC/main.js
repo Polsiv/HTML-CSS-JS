@@ -281,10 +281,6 @@ this.psu = psu;
     this.storage = storage;
   }
 
-  setCpu(cpu) {
-    this.cpu = cpu; 
-  } 
-
   overclockCpu() {
     if (this.cpu) {
       return this.cpu.Overclock();
