@@ -1,0 +1,31 @@
+@import './header';
+@import './variables';
+@import './inheritance';
+
+@use 'sass:math';
+
+.contact {
+   @include flexCenter(row, #000);
+}
+
+.last {
+    @extend header; //inherit the styles from header
+    background: lightcoral; //overwrite some styles if needed
+}
+
+.last_two{
+    @extend %message-shared;
+}
+
+// calculations
+.last_three{
+    @extend header;
+    width: calc(100% / 2);
+}
+
+
+
+@debug calc(pi); // 3.1415926536
+@debug calc(e);  // 2.7182818285
+@debug calc(infinity) > math.$max-number;  // true
+@debug calc(-infinity) < math.$min-number; // true

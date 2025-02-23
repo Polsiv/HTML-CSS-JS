@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+@debug calc(pi); // 3.1415926536
+@debug calc(e);  // 2.7182818285
+@debug calc(infinity) > math.$max-number;  // true
+@debug calc(-infinity) < math.$min-number; // true

@@ -1,0 +1,30 @@
+$primary_btn : #DEFFFB;
+$text_color : rgb(43, 43, 43);
+
+//mixin: a function in js
+
+@mixin flexCenter($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header {
+    @include flexCenter(column, #DEFFFB); // call the function    
+    //nested
+    button {
+        background-color: $primary_btn;
+        &:hover {
+            background: red;
+        }
+        &::after{
+            content: 'hello';
+        }
+    }    
+}
+
+
+
