@@ -8,7 +8,7 @@
 
 @function remove-where($list, $condition) {
     $new-list: ();
-    $separator: list.separator($list);
+    $separator: list.separator($list); // gets the separator of the list (, ' ')
     
     @each $element in $list {
         @if not meta.call($condition, $element){
@@ -23,8 +23,7 @@ $fonts: Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .content {
     @function contains-helvetica($sring) {
-        @return string.index($stringm "Helvetica");
+        @return string.index($string "Helvetica");
     }
-
     font-family: remove-where($fonts, meta.get-function("contains-helvetica"));
 }

@@ -1,11 +1,9 @@
-@import './header';
-@import './variables';
-@import './inheritance';
-
-@use 'sass:math';
+@use './header'; // imports
+@use './variables'; // imports
+@use './inheritance'; // imports
 
 .contact {
-   @include flexCenter(row, #000);
+   @include header.flexCenter(row, #000);
 }
 
 .last {
@@ -24,8 +22,3 @@
 }
 
 
-
-@debug calc(pi); // 3.1415926536
-@debug calc(e);  // 2.7182818285
-@debug calc(infinity) > math.$max-number;  // true
-@debug calc(-infinity) < math.$min-number; // true
